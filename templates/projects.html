@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('static/about.jpg');
+            background-size: cover; /* Cover the entire page */
+            background-position: center;
+            background-attachment: fixed;
+            color: #f5f5f5; /* Set text color to black */
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #000000; /* Black background */
+        }
+        .topbar {
+            position: fixed;
+            top: 0;
+            width: calc(100% - 200px); /* Adjusted width */
+            left: 200px; /* Adjusted position */
+            height: 80px;
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text */
+            padding: 20px;
+            text-align: center;
+            font-size: 20px; /* Increased font size */
+            z-index: 100; /* Ensure topbar is above other content */
+        }
+        .section-container {
+            margin-top: 120px; /* Adjusted to accommodate topbar height and add space below */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .section {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            color: #ffffff; /* White text */
+            padding: 10px;
+            margin-bottom: 20px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            margin-left: 210px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            margin-top: 10px
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+    </div>
+    
+    <div class="topbar">
+        <h1>Stock Portfolio Tracker</h1>
+    </div>
+    <div class="section-container">
+        <div class="section">
+            <h2>Open values over time</h2>
+            <img src="static/open_values.jpg" alt="Open values over time" style="width: 350px; height: auto;">
+            <p>High Opening Values are on 7th and 15th of march</p>
+        </div>
+        <!-- Add more sections as needed -->
+        <div class="section">
+            <h2>High values over time</h2>
+            <img src="static/high_values.jpg" alt="High values over time" style="width: 350px; height: auto;">
+            <p>High Values are on 6th, 7th and 12th of march</p>
+        </div>
+        <div class="section">
+            <h2>Low values over time</h2>
+            <img src="static/low_values.jpg" alt="Low values over time" style="width: 350px; height: auto;">
+            <p>Lowest value is on 1 march and highest on 7th march</p>
+        </div>
+        <div class="section">
+            <h2>Volume over time</h2>
+            <img src="static/volume.jpg" alt="Volume over time" style="width: 350px; height: auto;">
+            <p>Volume touched the peak on 15th march</p>
+        </div>
+    </div>
+</body>
+</html>

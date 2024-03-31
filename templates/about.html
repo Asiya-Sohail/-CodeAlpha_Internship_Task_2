@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('static/about.jpg');
+            background-size: cover; /* Cover the entire page */
+            background-position: center;
+            background-attachment: fixed;
+            color: #f5f5f5; /* Set text color to black */
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #000000; /* Black background */
+        }
+        .sidebar h1 {
+            color: #ffffff; /* White text */
+            margin-top: 20px; /* Adjust top margin if needed */
+            margin-bottom: 20px; /* Adjust bottom margin if needed */
+            padding-left: 35px; /* Add left padding to move it to the right */
+        }        
+        .topbar {
+            position: fixed;
+            top: 0;
+            width: calc(100% - 200px); /* Adjusted width */
+            left: 200px; /* Adjusted position */
+            height: 80px;
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text */
+            padding: 20px;
+            text-align: center;
+            font-size: 20px; /* Increased font size */
+        }
+        .content {
+            margin-left: 220px; /* Adjust for sidebar width */
+            margin-top: 100px; /* Adjust for top bar height */
+            padding: 20px;
+        }
+        .option {
+            display: block;
+            padding: 20px; /* Reduced padding */
+            background-color: #f5b7a6;
+            color: #000000;
+            text-align: center;
+            font-size: 15px; /* Reduced font size */
+            margin-bottom: 5px;
+            margin-top: 30px; 
+            border-radius: 5px;
+            text-decoration: none;
+            width: 120px; /* Reduced width */
+            margin-right: auto; /* Center the buttons */
+            margin-left: auto; /* Center the buttons */
+        }
+        .option:hover {
+            background-color: #f0a98e;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <br>
+        <br>
+        <h1>Options</h1>
+        <br>
+        <br>
+        <br>
+        <a href="/stock" class="option">Add/Remove</a>
+        <a href="/projects" class="option">Track </a>
+    </div>
+    <div class="topbar">
+        <h1>Stock Portfolio Tracker</h1>
+    </div>
+    <div class="content">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <p>Stock Portfolio Tracker is an innovative tool designed to help individuals manage and monitor 
+        their stock investments effectively. With intuitive features and user-friendly interface, it 
+        offers a comprehensive overview of your stock portfolio, allowing you to make informed decisions 
+        and track your investment performance with ease.</p>
+        <hr>
+        <br>
+    </div>
+</body>
+</html>
