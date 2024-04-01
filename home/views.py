@@ -24,8 +24,7 @@ def about(request):
 
 def projects(request):
     #API not working
-    # API_Key = "RC21E6QKCDX9UVUW"
-    # #API_Key = "ZQQ7GGTAMO4QUVYB"
+    #API_Key = "your api key"
     # url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey={API_Key}'
     # r = requests.get(url)
     # data = r.json()
